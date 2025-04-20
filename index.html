@@ -3,12 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <title>Unity WebGL Player | unity_minigames</title>
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
     <canvas id="unity-canvas" width=600 height=960 tabindex="-1" style="width: 600px; height: 960px; background: #231F20"></canvas>
-    <script src="Build/Webgl_Release.loader.js"></script>
+    <script src="Build/WebGL_Release.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -26,9 +25,9 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/Webgl_Release.data",
-        frameworkUrl: "Build/Webgl_Release.framework.js",
-        codeUrl: "Build/Webgl_Release.wasm",
+        dataUrl: "Build/WebGL_Release.data",
+        frameworkUrl: "Build/WebGL_Release.framework.js",
+        codeUrl: "Build/WebGL_Release.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "unity_minigames",
